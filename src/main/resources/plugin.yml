@@ -1,0 +1,6 @@
+name: szakmai
+version: '${version}'
+
+main: dev.tggamesyt.szakmai.Szakmai
+api-version: '26.2'
+load: POSTWORLD
