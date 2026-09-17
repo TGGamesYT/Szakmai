@@ -4,3 +4,13 @@ version: '${version}'
 main: dev.tggamesyt.szakmai.Szakmai
 api-version: '26.2'
 load: POSTWORLD
+commands:
+  starttimer:
+    description: Start game.
+    permission: szakmai.admin
+  settimer:
+    description: Adjust live timer.
+    permission: szakmai.admin
+  pausetimer:
+    description: Pause or resume timer.
+    permission: szakmai.admin
