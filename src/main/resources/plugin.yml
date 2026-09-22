@@ -3,14 +3,17 @@ version: '${version}'
 
 main: dev.tggamesyt.szakmai.Szakmai
 api-version: '26.2'
-load: POSTWORLD
+description: Agario-style blob game for Minecraft 26.2
+author: TGdoesCode
+website: https://tggamesyt.dev
+
 commands:
-  starttimer:
-    description: Start game.
-    permission: szakmai.admin
-  settimer:
-    description: Adjust live timer.
-    permission: szakmai.admin
-  pausetimer:
-    description: Pause or resume timer.
-    permission: szakmai.admin
+  doworld:
+    description: Resets the world to a fresh superflat (requires double confirm).
+    usage: /doworld confirm
+    permission: szakmai.doworld
+
+permissions:
+  szakmai.doworld:
+    description: Allows resetting the world via /doworld confirm.
+    default: op
